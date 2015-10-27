@@ -1,0 +1,21 @@
+{
+  "name": "rxfx-big",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "chokidar-cli": "^1.1.0",
+    "npm-run-all": "^1.2.12",
+    "tiny-slides": "0.0.2"
+  },
+  "scripts": {
+    "build": "big --style styles.css slides.md > slides.html",
+		"watch:css": "chokidar 'styles.css' -c 'npm run build'",
+		"watch:md": "chokidar 'slides.md' -c 'npm run build'",
+		"watch": "npm-run-all --parallel watch:*",
+		"start": "npm-run-all --parallel watch serve",
+		"serve": "live-server --open='slides.html'"
+  },
+  "author": "",
+  "license": "ISC"
+}
