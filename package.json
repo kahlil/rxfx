@@ -5,7 +5,7 @@
   "dependencies": {},
   "devDependencies": {
     "chokidar-cli": "^1.1.0",
-    "npm-run-all": "^1.2.12",
+    "npm-run-all": "^4.0.2",
     "tiny-slides": "0.0.2"
   },
   "scripts": {
